@@ -3,5 +3,11 @@
     "title": "toastycoder0",
     "description": "Welcome to Toasty Coder! Hi, I'm @toastycoder0 - FullStack dev specializing in React & Node.js. Let's build something amazing!",
     "image": "/otg.webp"
+  },
+  "header": {
+    "profile": "/profile.webp",
+    "name": "ToastyCoder0",
+    "description": "I'm a FullStack web developer with over a year of experience developing products from scratch. I work daily with HTML, CSS, JavaScript, JSX, TypeScript, and TSX. I'm also curious about Linux and Bash scripting.",
+    "location": "Reynosa, México"
   }
 }

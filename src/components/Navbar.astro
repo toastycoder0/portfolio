@@ -1,6 +1,9 @@
 ---
 import Cube from '@/components/icons/Cube.astro'
-import Menu from '@/components/icons/Menu.astro'
+import Github from './icons/Github.astro'
+import { navbar } from '@/data.json'
+
+const { github } = navbar
 ---
 
 <nav class='w-full max-w-container h-20 flex items-center border-b-[1px] border-dark-gray/60'>
@@ -8,7 +11,12 @@ import Menu from '@/components/icons/Menu.astro'
     <Cube /> toastycoder0
   </a>
 
-  <button class='ml-auto'>
-    <Menu />
-  </button>
+  <a
+    href={github}
+    target='_blank'
+    rel='noreferrer noopener'
+    class='ml-auto bg-dark-gray/60 p-2 rounded-lg duration-200 hover:bg-dark-gray focus-visible:bg-dark-gray'
+  >
+    <Github />
+  </a>
 </nav>

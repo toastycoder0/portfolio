@@ -9,7 +9,7 @@ export default {
       'dark-gray': '#3D4754'
     },
     maxWidth: {
-      container: '1000px'
+      container: '900px'
     },
     fontFamily: {
       manrope: 'Manrope, sans-serif'

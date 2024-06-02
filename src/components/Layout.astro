@@ -26,7 +26,18 @@ const { description, image, title } = meta
     <meta name='twitter:description' content={description} />
     <meta name='twitter:image' content={image} />
   </head>
-  <body class='bg-black font-manrope text-white px-6 flex flex-col gap-6 items-center pb-20'>
+  <body
+    class='bg-[#0a0a0a] min-h-svh font-manrope text-white px-6 flex flex-col gap-6 items-center pb-20 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'
+  >
     <slot />
   </body>
 </html>
+
+<style is:global>
+  a,
+  button,
+  a:focus,
+  button:focus {
+    outline: none;
+  }
+</style>

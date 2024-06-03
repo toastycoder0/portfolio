@@ -11,7 +11,7 @@ const { data } = await getRepositories()
     {
       data.slice(0, 3).map(({ name, html_url: url, description, topics = [] }) => (
         <a
-          class='border-[1px] p-4 border-dark-gray/60 rounded-lg flex flex-col gap-3'
+          class='border-[1px] p-4 border-dark-gray/60 rounded-lg flex flex-col duration-200 gap-3 hover:bg-dark-gray/20 hover:border-gray focus-visible:bg-dark-gray/20 focus-visible:border-gray''
           href={url}
           target='_blank'
           rel='noreferrer noopener'

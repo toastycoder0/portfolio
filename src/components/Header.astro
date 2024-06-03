@@ -1,16 +1,14 @@
 ---
 import Image from 'astro/components/Image.astro'
-import Pin from '@/components/icons/Pin.astro'
 import { header } from '@/data.json'
 
-const { name, profile, location, description } = header
+const { name, profile, description } = header
 ---
 
-<header id='about' class='items-center flex flex-col gap-2 text-center pt-16'>
+<header class='items-center flex flex-col gap-2 text-center'>
   <Image class='w-32 h-32 rounded-full' width={460} height={460} src={profile} alt={name} />
   <h1 class='font-bold text-2xl'>{name}</h1>
   <p class='text-gray w-full max-w-[400px] text-justify'>
     {description}
   </p>
-  <p class='flex text-sm items-center gap-1'><Pin /> {location}</p>
 </header>

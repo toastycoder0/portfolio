@@ -1,7 +1,7 @@
 import { Octokit } from '@octokit/core'
 
 const octokit = new Octokit({
-  auth: import.meta.env.GITHUB_API_TOKEN
+  auth: import.meta.env.TOKEN_GITHUB_API
 })
 
 export const getRepositories = async () => {

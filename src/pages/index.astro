@@ -2,9 +2,13 @@
 import Layout from '@/components/Layout.astro'
 import Navbar from '@/components/Navbar.astro'
 import Header from '@/components/Header.astro'
+import Projects from '@/components/Projects.astro'
 ---
 
 <Layout>
   <Navbar />
   <Header />
+  <main class='w-full max-w-container flex flex-col gap-24'>
+    <Projects />
+  </main>
 </Layout>

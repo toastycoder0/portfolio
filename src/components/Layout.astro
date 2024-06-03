@@ -27,7 +27,7 @@ const { description, image, title } = meta
     <meta name='twitter:image' content={image} />
   </head>
   <body
-    class='bg-black min-h-svh font-manrope text-white px-6 flex flex-col gap-24 items-center pb-20 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] md:px-12'
+    class='bg-black min-h-svh font-manrope text-white px-6 flex flex-col gap-24 items-center pb-16 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] md:px-12'
   >
     <slot />
   </body>
@@ -36,8 +36,12 @@ const { description, image, title } = meta
 <style is:global>
   a,
   button,
+  input,
+  textarea,
   a:focus,
-  button:focus {
+  button:focus,
+  input:focus,
+  textarea:focus {
     outline: none;
   }
 </style>

@@ -8,7 +8,8 @@ export default {
       gray: '#9EABB8',
       blue: '#4493f8',
       'dark-gray': '#3D4754',
-      'light-blue': '#7FB3FB'
+      'light-blue': '#7FB3FB',
+      red: '#EC5757'
     },
     maxWidth: {
       container: '950px'

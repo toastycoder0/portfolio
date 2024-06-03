@@ -3,13 +3,14 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     colors: {
-      black: '#121417',
+      black: '#0A0A0A',
       white: '#FFFFFF',
       gray: '#9EABB8',
+      blue: '#4493f8',
       'dark-gray': '#3D4754'
     },
     maxWidth: {
-      container: '900px'
+      container: '950px'
     },
     fontFamily: {
       manrope: 'Manrope, sans-serif'

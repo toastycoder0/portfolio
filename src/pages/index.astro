@@ -1,16 +1,18 @@
 ---
 import Layout from '@/components/Layout.astro'
-import Navbar from '@/components/Navbar.astro'
 import Header from '@/components/Header.astro'
 import Respositories from '@/components/Respositories.astro'
 import Footer from '@/components/Footer.astro'
+import { getUserData, getRepositories } from '@/lib/github'
+
+const repositories = await getRepositories()
+const user = await getUserData()
 ---
 
-<Layout>
-  <Navbar />
-  <Header />
+<Layout {...user}>
+  <Header {...user} />
   <main class='w-full max-w-container flex flex-col gap-24'>
-    <Respositories />
+    <Respositories repositories={repositories} />
   </main>
   <Footer />
 </Layout>

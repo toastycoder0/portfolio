@@ -20,7 +20,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.1",
     "eslint": "^8.57.0",
     "eslint-plugin-astro": "^1.2.0",
     "prettier": "^3.3.1",
